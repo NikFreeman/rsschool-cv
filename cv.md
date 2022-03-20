@@ -25,12 +25,11 @@ The purpose of studying at RSSchool is to acquire new skills in development, to 
 
 ### Skills and Proficiency:
 
-HTML5, CSS3
-JavaScript Basics
-SQL
-VBA for Aplication
-Git, GitHub
-VS Code, IntelliJ IDEA
+HTML5, CSS3  
+SQL  
+VBA for Aplication  
+Git, GitHub  
+VS Code, MS VS Community   
 Adobe Photoshop, Corel Draw, InDesign
 
 ### Code example:
@@ -47,15 +46,15 @@ function rot13(message){
       {
         let x=chr.toUpperCase();
         if (Shablon.indexOf(x) === -1) {res +=chr} 
-        else
-        {
-          let i=(Shablon.indexOf(x)+13) % 26;
-          if (x === chr) {res +=Shablon[i]}
-           else
-            {
-            res +=Shablon[i].toLowerCase();  
-            }
-        }        
+          else
+          {
+           let i=(Shablon.indexOf(x)+13) % 26;
+           if (x === chr) {res +=Shablon[i]}
+             else
+             {
+              res +=Shablon[i].toLowerCase();  
+             }
+          }        
       }
     return res;
 }
@@ -63,10 +62,10 @@ function rot13(message){
 
 
 ### Education:
- 
+
 + higher (Vitebsk State University).
 + SQL (https://sql-ex.ru)
-+ HTML and CSS (https://codecademy.com and httpS://metanit.com)
++ HTML and CSS (https://codecademy.com and https://metanit.com)
 + JavaScript https://learn.javascript.ru/
 
 ### Language: 
