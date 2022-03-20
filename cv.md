@@ -1,9 +1,9 @@
 # Mikalai Hancharonak
 
 ### Contact information:
-Phone: +375 29 249 03 31
-E-mail: Classic76@tut.by
-Telegram: @N1kFreeman
+Phone: +375 29 249 03 31  
+E-mail: Classic76@tut.by  
+Telegram: @N1kFreeman  
 
 ### Briefly about yourself
 Graduated from Vitebsk State University with a degree in Mathematics and Computer Science.
