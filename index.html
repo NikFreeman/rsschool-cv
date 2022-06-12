@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
         <meta charset="utf-8">
         <title>CV</title>
-        <link rel="stylesheet"  href="css/normalize.css"/>
-        <link rel="stylesheet"  href="css/style.css"/>
-    </head> 
-    <body>
+        <link rel="stylesheet"  href="./css/normalize.css"/>
+        <link rel="stylesheet"  href="./css/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
+  </head> 
+  <body>
+    <div class='wrapper'>
       <footer class = 'footer'>
-        <div class="wraper">
-          <img class = 'footer--image' src=""  alt="I`am">
-          <h1>Mikalai Hancharonak</h1>         
-          <article class = 'footer--contact'>          
-            Phone: +375 29 249 03 31  
-            E-mail: Classic76@tut.by  
-            Telegram: @N1kFreeman  
-            Discord: NikFreeman 
+        <div class='logo'>
+            <div class='footer-logo'>
+              <img class = 'footer-image' src=""  alt="I`am">
+              <h1>Mikalai Hancharonak</h1>         
+            </div>
+            <article class = 'footer-contact'>          
+            <ul>
+              <li><span>Phone: <a class='phone' href="tel:+375292490331">+375 29 249-03-31</a></span></li> 
+              <li><span>E-mail: <a class='mailto' href="mailto:Classic76@tut.by">Classic76@tut.by</a></span></li>  
+              <li><span>Telegram: <a class='telegram' href="https://t.me/N1kFreeman" target="_blank"> N1kFreeman</a></span></li>    
+              <li><span>Discord: <a class='discord' href="https://discord.gg/VJEkA5ab" target="_blank"> NikFreeman</a></span></li>
+            </ul>
           </article>
-       </div> 
+        </div>
       </footer>
-      <nav>
+      <nav class="navigation">
         <ol>
-          <li>Contact information</li>
-          <li>Briefly about yourself</li>
-          <li>Skills and Proficiency</li>
-          <li>Code example</li>
-          <li>Education</li>
-          <li>Language</li>
+          <li><a href="#about">Briefly about yourself</a></li>
+          <li><a href="#skills">Skills and Proficiency</a></li>
+          <li><a href="#code">Code example</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#language">Language</a></li>
         </ol>
       </nav>
-      <main>        
+      <main class="main-content">        
         <article>
-          <h3>
+          <h3 id="about">
             Briefly about yourself
           </h3>
           <p>Graduated from Vitebsk State University with a degree in Mathematics and Computer Science.</p>
@@ -44,7 +51,7 @@
           <p>The purpose of studying at RSSchool is to acquire new skills in development, to increase opportunities in the labor market.</p>
         </article>
         <article>
-          <h3>
+          <h3 id="skills">
             Skills and Proficiency
           </h3>
           HTML5, CSS3  
@@ -55,48 +62,49 @@
           Adobe Photoshop, Corel Draw, InDesign
         </article>
         <article>
-          <h3>Code example</h3>
-          ROT13 is a simple letter substitution cipher that replaces a letter with the letter 13 letters after it in the alphabet. ROT13 is an example of the Caesar cipher.
+          <h3 id="code">Code example</h3>
+          <p>ROT13 is a simple letter substitution cipher that replaces a letter with the letter 13 letters after it in the alphabet. ROT13 is an example of the Caesar cipher.
+             Create a function that takes a string and returns the string ciphered with Rot13. If there are numbers or special characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet should be shifted, like in the original Rot13 "implementation".</p>
+            <code>
+              <pre>
+              function rot13(message){
+              //your code here
+                let Shablon ='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                let res ='';
+                for (let chr of message){
+                  let x=chr.toUpperCase();
+                    if (Shablon.indexOf(x) === -1) {res +=chr} 
+                    else {
+                        let i=(Shablon.indexOf(x)+13) % 26;
+                        if (x === chr) {res +=Shablon[i]}
+                        else {
+                          res +=Shablon[i].toLowerCase();  
+                        }
+                    }        
+                }
+                return res;
+              }
+          </pre> </code>
+        </article>
+        <article>
+          <h3 id="education">Education</h3>
+          <ul>
+            <li>higher (Vitebsk State University)</li>
+            <li>SQL (https://sql-ex.ru)</li>
+            <li>HTML and CSS (https://codecademy.com and https://metanit.com)</li>
+            <li>JavaScript https://learn.javascript.ru/ and <a href="https://www.codewars.com/users/NikFreeman">codewars.com</a></li>
 
-Create a function that takes a string and returns the string ciphered with Rot13. If there are numbers or special characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet should be shifted, like in the original Rot13 "implementation".
-```
-function rot13(message){
-  //your code here
-    let Shablon ='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    let res ='';
-    for (let chr of message)
-      {
-        let x=chr.toUpperCase();
-        if (Shablon.indexOf(x) === -1) {res +=chr} 
-          else
-          {
-           let i=(Shablon.indexOf(x)+13) % 26;
-           if (x === chr) {res +=Shablon[i]}
-             else
-             {
-              res +=Shablon[i].toLowerCase();  
-             }
-          }        
-      }
-    return res;
-}
-```
+          </ul>         
         </article>
         <article>
-          <h3>Education</h3>
-          + higher (Vitebsk State University).
-+ SQL (https://sql-ex.ru)
-+ HTML and CSS (https://codecademy.com and https://metanit.com)
-+ JavaScript https://learn.javascript.ru/
-        </article>
-        <article>
-         <h3>Language</h3>
+         <h3 id="language">Language</h3>
           English level - A2 (in progress)
         </article>
       </main>
       <footer>
 
       </footer>
-    </body>
+    </div>
+  </body>
 </html>
 
