@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CV</title>
+    <link rel="stylesheet"  href="./css/normalize.css"/>
+    <link rel="stylesheet"  href="./css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
+  </head> 
+  <body>
+    <div class='wrapper'>
+      <header class = 'header'>
+        <div class='logo'>
+          <div class='header-logo'>
+            <img class = 'header-image' src="assest/Iam.jpg"  alt="Mikalai">
+            <h1>Mikalai Hancharonak</h1>         
+          </div>
+          <div class = 'header-contact'>          
+            <ul>
+              <li><span>Phone: <a href="tel:+375292490331">+375 29 249-03-31</a></span></li> 
+              <li><span>E-mail: <a href="mailto:Classic76@tut.by">Classic76@tut.by</a></span></li>  
+              <li><span>Telegram: <a href="https://t.me/N1kFreeman" target="_blank"> N1kFreeman</a></span></li>    
+              <li><span>Discord: <a href="https://discord.gg/VJEkA5ab" target="_blank"> NikFreeman</a></span></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <nav class="navigation">
+        <ol>
+          <li><a href="#about">Briefly about yourself</a></li>
+          <li><a href="#skills">Skills and Proficiency</a></li>
+          <li><a href="#code">Code example</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#language">Language</a></li>
+          <li><a href="#project">Project</a></li>
+        </ol>
+      </nav>
+      <main class="main-content">        
+        <article>
+          <h2 id="about">
+            Briefly about yourself
+          </h2>
+          <p>Graduated from Vitebsk State University with a degree in Mathematics and Computer Science.</p>
+          <p>He worked as a school teacher.</p>
+          <p>After that, he moved to work in the editorial office of the regional newspaper "Patryet", engaged in newspaper layout, photo retouching. <span class="main-content__select">(Adobe Photoshop, InDesign, Corel Draw)</span>.</p>
+          <p>Then he continued his career in the automation department of Belarusbank OJSC. <span class="main-content__select">(Novell administration, user support, automation of routine actions)</span>.</p>
+          <p>After the reorganization of the branch of Belarusbank OJSC, he was engaged in freelancing. Developed and implemented a project to automate the work of the central district hospital. (Patient card management, creation of doctors' work schedules, electronic queue, medical examination, reporting system, patient admission) <span class="main-content__select">(Delphi, MSSQL Server, VBA for Application, Cristal Report)</span>.</p>
+          <p>Then he worked as the head of the Information Technology Department of JSC Belagroprombank. <span class="main-content__select">(Novell administration, Active Directory, user support, antivirus protection, installation of software updates)</span>.</p>
+          <p>After the reorganization of the Information Technology department, I moved to the position of head of the Retail sales Department of JSC Belagroprombank <span class="main-content__select">(I am engaged in advertising, sales funnels, processing arrays of information for the formation of commercial lists, concluding contracts)</span>.</p>
+          <p>The purpose of studying at RSSchool is to acquire new skills in development, to increase opportunities in the labor market.</p>
+        </article>
+        <article>
+          <h2 id="skills">
+            Skills and Proficiency
+          </h2>
+          <p class="main-skills">
+          <span class="main-skills__inline-block">HTML5</span>,
+          <span class="main-skills__inline-block">CSS3</span>,  
+          <span class="main-skills__inline-block">JavaScript</span>,
+          <span class="main-skills__inline-block">VBA for Aplication</span>,
+          <span class="main-skills__inline-block">Git</span>,
+          <span class="main-skills__inline-block">GitHub</span>,
+          <span class="main-skills__inline-block">VS Code</span>,
+          <span class="main-skills__inline-block">Adobe Photoshop</span>,
+          <span class="main-skills__inline-block">Figma</span>,
+          <span class="main-skills__inline-block">Adobe InDesign</span>,
+          <span class="main-skills__inline-block">Adobe Illustrator</span>,
+          <span class="main-skills__inline-block">Basic sales skills</span>,
+          <span class="main-skills__inline-block">Ability to work with information</span>,
+          <span class="main-skills__inline-block">Stress resistance</span>,
+          <span class="main-skills__inline-block">Communication skills</span>.</p>
+        </article>
+        <article>
+          <h2 id="code">Code example</h2>
+          <p>ROT13 is a simple letter substitution cipher that replaces a letter with the letter 13 letters after it in the alphabet. ROT13 is an example of the Caesar cipher.
+             Create a function that takes a string and returns the string ciphered with Rot13. If there are numbers or special characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet should be shifted, like in the original Rot13 "implementation".</p>
+             <pre>
+               <code>
+              
+              function rot13(message){
+              //your code here
+                let Shablon ='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                let res ='';
+                for (let chr of message){
+                  let x=chr.toUpperCase();
+                    if (Shablon.indexOf(x) === -1) {res +=chr} 
+                    else {
+                        let i=(Shablon.indexOf(x)+13) % 26;
+                        if (x === chr) {res +=Shablon[i]}
+                        else {
+                          res +=Shablon[i].toLowerCase();  
+                        }
+                    }        
+                }
+                return res;
+              }
+          </code></pre>
+        </article>
+        <article>
+          <h2 id="education">Education</h2>
+          <ul>
+            <li>higher (Vitebsk State University)</li>
+            <li>SQL (https://sql-ex.ru)</li>
+            <li>HTML and CSS (https://codecademy.com and https://metanit.com)</li>
+            <li>JavaScript https://learn.javascript.ru/ and <a href="https://www.codewars.com/users/NikFreeman">codewars.com</a></li>
+          </ul>         
+        </article>
+        <article>
+         <h2 id="language">Language</h2>
+          <p>Russian level - native</p>
+          <p>English level - A2 (in progress)</p>
+        </article>
+        <article>
+          <h2 id="project">Project</h2>
+           <a href="https://nikfreeman.github.io/rsschool-cv/">CV</a>
+           
+         </article>
+      </main>
+      <footer class="footer">
+        <div class="footer-content">
+          <a class="footer-github" href="https://github.com/NikFreeman"></a>  
+          <time class="footer-time">2022</time>
+          <a class="footer-rsschool" href="https://rs.school/js/"></a>           
+        </div>
+      </footer>      
+    </div>
+  </body>
+</html>
